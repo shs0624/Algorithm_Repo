@@ -8,13 +8,11 @@ vector<int> rope;
 
 void Solution()
 {
-    int Max = 0, cnt = 0, amount = 0, Min = 10001;
+    int Max = 0, cnt = 0, Min = 10001;
 
     sort(rope.begin(), rope.end(), greater<>());
     for (int i = 0; i < rope.size(); i++)
     {
-        amount += rope[i];
-
         Min = min(Min, rope[i]);
         Max = max(Max, Min * (i + 1));
     }

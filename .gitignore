@@ -1,5 +1,9 @@
 
 *.exe
+*.suo
+*.db
+*.json
+*.sqlite
 C++/.vscode
 C++/.vscode/tasks.json
 C++/.vscode/launch.json
